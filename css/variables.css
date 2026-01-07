@@ -1,0 +1,35 @@
+/* Design System Variables */
+:root {
+  /* Premium Winery Colors */
+  --color-background: #7c7164;
+  --color-foreground: #262626;
+  --color-card: #e3d8c7;
+  /* --color-card: #f8f1e9; */
+  --color-primary: #6b2525;
+  --color-wine-primary: #6b2525;
+  --color-wine-dark: #3d1616;
+  --color-beige-light: #d7c8b6;
+  --color-off-white: #e0d5c8;
+  --color-beige-warm: #7c7164;
+  --color-accent: #802b2b;
+  
+  /* Shadows */
+  --shadow-elegant: 0 10px 40px -10px rgba(107, 37, 37, 0.15);
+  --shadow-soft: 0 4px 20px -4px rgba(38, 38, 38, 0.1);
+  
+  /* Transitions */
+  --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: all 0.2s ease-out;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+  
+  /* Border Radius */
+  --radius: 0.5rem;
+  --radius-lg: 0.75rem;
+}

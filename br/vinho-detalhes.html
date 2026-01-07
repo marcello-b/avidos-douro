@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore nossa seleção premium de vinhos tintos, brancos, rosés e espumantes - Vinícola Premium.">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link rel="manifest" href="../favicon/site.webmanifest">
+  <title>Ávidos Douro | Nossos Vinhos</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/modals.css">
+</head>
+<body>
+  <!-- Header -->
+    
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo-container">
+            <img src="../images/logo-avidos.svg" alt="Ávidos Douro" class="logo">
+            </a>
+            
+            <nav class="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="historia.html" class="nav-link">História</a>
+            <a href="vinhos.html" class="nav-link">Vinhos</a>
+            <a href="vinhas.html" class="nav-link">Vinhas</a>
+            <a href="onde-encontrar.html" class="nav-link">Onde Encontrar</a>
+            <a href="dicas.html" class="nav-link">Dicas</a>
+
+            <!-- Language selector -->
+            <div class="lang-selector">
+                <button class="lang-trigger" aria-haspopup="true" aria-expanded="false" aria-label="Selecionar idioma">
+                <i class="fas fa-globe"></i>
+                </button>
+                <div class="lang-menu" role="menu">
+                <a href="#" class="lang-option" role="menuitem" data-lang="pt">PT</a>
+                <a href="#" class="lang-option" role="menuitem" data-lang="eng">ENG</a>
+                </div>
+            </div>
+            </nav>
+            
+            <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <div class="mobile-menu">
+            <nav class="mobile-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="historia.html" class="nav-link">História</a>
+            <a href="vinhos.html" class="nav-link">Vinhos</a>
+            <a href="vinhas.html" class="nav-link">Vinhas</a>
+            <a href="onde-encontrar.html" class="nav-link">Onde Encontrar</a>
+            <a href="dicas.html" class="nav-link">Dicas</a>
+
+            <!-- Language selector (mobile) -->
+            <div class="lang-selector mobile">
+                <button class="lang-trigger" aria-haspopup="true" aria-expanded="false" aria-label="Selecionar idioma">
+                <i class="fas fa-globe"></i>
+                <!-- <span class="lang-label">Idioma</span> -->
+                </button>
+                <div class="lang-menu" role="menu">
+                <a href="#" class="lang-option" role="menuitem" data-lang="pt">PT</a>
+                <a href="#" class="lang-option" role="menuitem" data-lang="eng">ENG</a>
+                </div>
+            </div>
+            </nav>
+        </div>
+    </header>
+
+
+  <!-- Hero Banner -->
+  <section class="hero-banner">
+    <div class="hero-background parallax-bg" style="background-image: url('../images/historia-servido.jpg')"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="animate-fade-up">
+        <h1 class="hero-title">Nossos Vinhos</h1>
+        <p class="hero-subtitle">Seleção Premium de Vinhos Excepcionais</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Wine Details -->
+  <section class="content-section bg-beige">
+    <div class="container">
+      <div class="grid grid-cols-2">
+        <!-- Wine Image -->
+        <div class="scroll-animate text-center animate-fade-up">
+          <img id="wine-image" src="../images/garrafa_apaixonado.png" class="margin-auto wine-image" alt="Apaixonado Tinto">
+          <a href="vinhos.html" class="btn btn-primary margin-top-2">Ver Todos os Vinhos</a>
+        </div>
+
+        <!-- Wine Info -->
+        <div class="scroll-animate animate-fade-up">
+          <div class="wine-detail">
+            <h1>Apaixonado</h1>
+            <h3>Desejo inflamado, ardente, intenso e desmedido, por algo ou alguém!</h3>
+
+           <p>Ícone da vinícola, produzido apenas em safras excepcionais, com uma grande diversidade de castas. Resulta em um vinho muito elegante e muito complexo, bem ao estilo dos grandes vinhas velhas.</p>
+          </div>
+
+          <!-- Vintage Accordion -->
+          <div>
+            <h3>Informações Técnicas por Safra</h3>
+            <div class="accordion-container">
+              <!-- Safra 2024 -->
+              <div class="accordion-item active">
+                <button class="accordion-trigger">
+                  <span>2024</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" 
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+                <div class="accordion-content"><br>
+                  <h4 class="normal">NOTAS DE PROVA</h4>
+
+                      <p>Cor ruby intenso. Apresenta aromas de frutos vermelhos, com toques de especiarias do estágio em madeira de segundo uso. Vinho fino com maior complexidade aromática e muita elegância.</p><br>
+
+
+                      <h4 class="normal">INFORMAÇÃO TÉCNICA</h4>
+
+                                          <p class="small text-left margin-top-2">
+                                          <span class="strong">Região:</span> Douro<br>
+                                          <span class="medium">Sub-região:</span> Douro Superior - Torre de Moncorvo<br>
+                                          <span class="medium">Tipo de solo:</span> Predominantemente xisto<br>
+                                          <span class="medium">Vinhas: </span>Sardoal<br>
+                                          <span class="medium">Idade dos vinhedos:</span> 15 a 30 Anos<br>
+                                          <span class="medium">Castas:</span> Tinta Roriz, Touriga Franca, Touriga Nacional e Tinta Amarela<br>
+                                          <span class="medium">Densidade por ha:</span> 4400 Plantas<br>
+                                          <span class="medium">Altitude dos vinhedos:</span> 250 a 500m<br>
+                                          <span class="medium">Período de Vindima:</span> Setembro<br>
+                                          <span class="medium">Fermentação:</span> Cubas de Inox<br>
+                                          <span class="medium">Engarrafado:</span> junho de 2016 <br>
+                                          <span class="medium">Estágio:</span> estágio de 16 meses em barricas de carvalho francês, de segundo uso.<br>
+                                          <span class="medium">Álcool:</span> 14,00% vol<br>
+                                          <span class="medium">Produção:</span> 9.700 garrafas<br>
+                                          </p><br>
+                </div>
+              </div>
+
+              <!-- Safra 2023 -->
+              <div class="accordion-item">
+                <button class="accordion-trigger">
+                  <span>2023</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" 
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <h4>Safra 2023</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint explicabo veritatis molestias fuga eveniet incidunt.</p>
+                </div>
+              </div>
+
+              <!-- Safra 2022 -->
+              <div class="accordion-item">
+                <button class="accordion-trigger">
+                  <span>2022</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" 
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+            <div class="accordion-content">
+                  <h4>Safra 2022</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint explicabo veritatis molestias fuga eveniet incidunt.</p>
+                </div>
+              </div>
+
+              <!-- Safra 2021 -->
+              <div class="accordion-item">
+                <button class="accordion-trigger">
+                  <span>2021</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" 
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <h4>Safra 2021</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint explicabo veritatis molestias fuga eveniet incidunt.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section scroll-animate">
+                    <div class="logo-container" style="margin-bottom: 0rem;">
+                        <img src="../images/logo-avidos.png" alt="Vinícola Premium" class="logo">
+                    </div>
+                    <p>
+                       Vinhos que despertam paixão.
+                    </p>
+                </div>
+                
+                <div class="footer-section scroll-animate">
+                    <h3>Navegação</h3>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="historia.html">História</a>
+                        <a href="vinhos.html">Vinhos</a>
+                        <a href="vinhas.html">Vinhas</a>
+                        <a href="onde-encontrar.html">Onde Encontrar</a>
+                        <a href="dicas.html">Dicas</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section scroll-animate">
+                    <h3>Contato</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span>+55 (11) 1234-5678</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>contato@vinicolapremium.com.br</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>Rua das Vinhas, 123<br>Bento Gonçalves - RS<br>CEP 95700-000</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section scroll-animate">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="https://facebook.com" class="social-link" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" class="social-link" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com" class="social-link" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div style="margin-top: 1.5rem;">
+                        <p style="font-size: 0.875rem; margin-bottom: 0.5rem; color: rgba(215, 200, 182, 0.6);">Idioma:</p>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <a href="index.html" style="font-weight: 600; color: var(--color-beige-light);">PT</a>
+                            <span style="color: rgba(215, 200, 182, 0.4);">/</span>
+                            <a href="../eng/index.html" style="font-weight: 600; color: rgba(215, 200, 182, 0.6);">EN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom scroll-animate">
+                <p style="color: rgba(215, 200, 182, 0.6);">© 2025 Ávidos Douro. Todos os direitos reservados.</p>
+                <div>
+                    <a href="politica-privacidade.html" style="color: rgba(215, 200, 182, 0.6);">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+  <!-- Cookie Consent -->
+  <div id="cookieConsent" class="cookie-consent hidden">
+    <div class="cookie-content">
+      <button class="cookie-close" aria-label="Fechar">&times;</button>
+      <h3>🍪 Cookies e Privacidade</h3>
+      <p>Utilizamos cookies para melhorar sua experiência em nosso site. Ao continuar navegando, você concorda com nossa <a href="politica-privacidade.html">Política de Privacidade</a>.</p>
+      <div class="cookie-buttons">
+        <button id="acceptCookies" class="btn btn-primary">Aceitar</button>
+        <button id="rejectCookies" class="btn btn-secondary">Recusar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Age Gate -->
+  <div id="ageGate" class="modal-overlay hidden">
+    <div class="modal-content age-gate">
+      <img src="../images/logo.png" alt="Logo Vinícola Premium" class="age-gate-logo">
+      <h2>Verificação de Idade</h2>
+      <p>Você tem 18 anos ou mais?</p>
+      <p class="age-disclaimer">O consumo de bebidas alcoólicas é proibido para menores de 18 anos.</p>
+      <div class="age-buttons">
+        <button id="ageYes" class="btn btn-primary">Sim, tenho 18+</button>
+        <button id="ageNo" class="btn btn-secondary">Não</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/header.js"></script>
+  <script src="../js/scroll-animations.js"></script>
+  <script src="../js/accordion.js"></script>
+  <script src="../js/tabs.js"></script>
+  <script src="../js/cookie-consent.js"></script>
+  <script src="../js/age-gate.js"></script>
+  
+  <script>
+    // Wine data
+    const winesData = {
+      'apaixonado': {
+        name: 'Apaixonado',
+        image: '../images/garrafa-apaixonado.png',
+        region: 'Vale dos Vinhedos, RS',
+        grape: 'Cabernet Sauvignon e Merlot',
+        description: 'Nosso Reserva Tinto é um blend magistral que representa o ápice da nossa produção. Elaborado com uvas selecionadas dos melhores talhões de nossos vinhedos, este vinho expressa perfeitamente o terroir único da região.'
+      },
+      'branco-premium': {
+        name: 'Branco Premium',
+        image: '../images/wine-2.png',
+        region: 'Serra Gaúcha, RS',
+        grape: 'Chardonnay',
+        description: 'Um branco sofisticado de caráter único, produzido com uvas Chardonnay cultivadas em altitude. Fermentação e maturação em barricas de carvalho francês conferem complexidade e elegância.'
+      },
+      'rose-elegance': {
+        name: 'Rosé Elegance',
+        image: '../images/wine-3.png',
+        region: 'Campanha Gaúcha, RS',
+        grape: 'Pinot Noir',
+        description: 'Rosé delicado e refinado, elaborado pelo método de sangria. Apresenta coloração salmão vibrante e frescor característico, perfeito para ocasiões especiais.'
+      },
+      'cabernet-sauvignon': {
+        name: 'Cabernet Sauvignon',
+        image: '../images/wine-4.png',
+        region: 'Vale dos Vinhedos, RS',
+        grape: 'Cabernet Sauvignon',
+        description: 'Monovarietal clássico que expressa toda a nobreza da casta Cabernet Sauvignon. Estruturado e complexo, ideal para envelhecimento prolongado.'
+      },
+      'merlot-classico': {
+        name: 'Merlot Clássico',
+        image: '../images/wine-5.png',
+        region: 'Serra Gaúcha, RS',
+        grape: 'Merlot',
+        description: 'Merlot de textura aveludada e taninos macios. Aromático e elegante, combina perfeitamente tradição e modernidade na vinificação.'
+      },
+      'chardonnay-especial': {
+        name: 'Chardonnay Especial',
+        image: '../images/wine-6.png',
+        region: 'Planalto Catarinense, SC',
+        grape: 'Chardonnay',
+        description: 'Chardonnay de altitude com frescor e mineralidade marcantes. Fermentação em barricas confere notas amanteigadas e complexidade aromática.'
+      },
+      'espumante-brut': {
+        name: 'Espumante Brut',
+        image: '../images/wine-7.png',
+        region: 'Serra Gaúcha, RS',
+        grape: 'Chardonnay e Pinot Noir',
+        description: 'Espumante método tradicional com segunda fermentação em garrafa. Perlage fino e persistente, elegância e finesse em cada taça.'
+      }
+    };
+
+    // Get wine ID from URL parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const wineId = urlParams.get('id') || 'reserva-tinto';
+    const wine = winesData[wineId];
+
+    if (wine) {
+      document.getElementById('wine-name').textContent = wine.name;
+      document.getElementById('wine-region').textContent = wine.region;
+      document.getElementById('wine-image').src = wine.image;
+      document.getElementById('wine-image').alt = wine.name;
+      document.getElementById('wine-description').textContent = wine.description;
+      document.getElementById('wine-region-detail').textContent = wine.region;
+      document.getElementById('wine-grape').textContent = wine.grape;
+      document.title = `${wine.name} - Vinícola Premium`;
+    }
+  </script>
+</body>
+</html>

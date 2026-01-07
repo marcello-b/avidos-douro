@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore nossa seleção premium de vinhos tintos, brancos, rosés e espumantes - Vinícola Premium.">
+  <title>Ávidos Douro | Nossos Vinhos</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/modals.css">
+</head>
+<body>
+  <!-- Header -->
+    
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo-container">
+            <img src="../images/logo-avidos.svg" alt="Ávidos Douro" class="logo">
+            </a>
+            
+            <nav class="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="historia.html" class="nav-link">História</a>
+            <a href="vinhos.html" class="nav-link">Vinhos</a>
+            <a href="vinhas.html" class="nav-link">Vinhas</a>
+            <a href="onde-encontrar.html" class="nav-link">Onde Encontrar</a>
+            <a href="dicas.html" class="nav-link">Dicas</a>
+
+            <!-- Language selector -->
+            <div class="lang-selector">
+                <button class="lang-trigger" aria-haspopup="true" aria-expanded="false" aria-label="Selecionar idioma">
+                <i class="fas fa-globe"></i>
+                </button>
+                <div class="lang-menu" role="menu">
+                <a href="#" class="lang-option" role="menuitem" data-lang="br">BR</a>
+                <a href="#" class="lang-option" role="menuitem" data-lang="eng">ENG</a>
+                </div>
+            </div>
+            </nav>
+            
+            <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <div class="mobile-menu">
+            <nav class="mobile-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="historia.html" class="nav-link">História</a>
+            <a href="vinhos.html" class="nav-link">Vinhos</a>
+            <a href="vinhas.html" class="nav-link">Vinhas</a>
+            <a href="onde-encontrar.html" class="nav-link">Onde Encontrar</a>
+            <a href="dicas.html" class="nav-link">Dicas</a>
+
+            <!-- Language selector (mobile) -->
+            <div class="lang-selector mobile">
+                <button class="lang-trigger" aria-haspopup="true" aria-expanded="false" aria-label="Selecionar idioma">
+                <i class="fas fa-globe"></i>
+                <!-- <span class="lang-label">Idioma</span> -->
+                </button>
+                <div class="lang-menu" role="menu">
+                <a href="#" class="lang-option" role="menuitem" data-lang="br">BR</a>
+                <a href="#" class="lang-option" role="menuitem" data-lang="eng">ENG</a>
+                </div>
+            </div>
+            </nav>
+        </div>
+    </header>
+
+  <!-- Hero Banner -->
+  <section class="hero-banner">
+    <div class="hero-background parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1474722883778-792e7990302f?w=1200')"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div>
+        <h1 class="hero-title">Nossos Vinhos</h1>
+        <p class="hero-subtitle">Seleção Premium de Vinhos Excepcionais</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Wine Details -->
+  <section class="content-section bg-beige">
+    <div class="container">
+      <div class="grid grid-cols-2" style="gap: 3rem; align-items: start;">
+        <!-- Wine Image -->
+        <div class="scroll-animate" style="background-color: #e2d7cb; border-radius: 0.5rem; padding: 3rem; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.5rem;">
+          <img id="wine-image" src="" alt="" style="max-width: 300px; width: 100%; height: auto; object-fit: contain;">
+          <a href="vinhos.html" class="btn btn-primary" style="width: 100%; max-width: 300px; text-align: center;">Ver Todos os Vinhos</a>
+        </div>
+
+        <!-- Wine Info -->
+        <div class="scroll-animate" style="animation-delay: 200ms;">
+          <div style="margin-bottom: 2rem;">
+            <h1 style="font-size: 1.875rem; font-weight: bold; margin-bottom: 1rem;">Apaixonado</h1>
+            <p id="wine-description" style="font-size: 1.125rem; color: hsl(var(--foreground)); line-height: 1.75;"></p>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; padding-top: 1.5rem; border-top: 1px solid hsl(var(--border));">
+            <div>
+              <h3 style="font-weight: 600; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em; color: hsl(var(--foreground)); margin-bottom: 0.5rem;">Região</h3>
+              <p id="wine-region-detail" style="font-size: 1.125rem; font-weight: 500;"></p>
+            </div>
+            <div>
+              <h3 style="font-weight: 600; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em; color: hsl(var(--foreground)); margin-bottom: 0.5rem;">Casta</h3>
+              <p id="wine-grape" style="font-size: 1.125rem; font-weight: 500;"></p>
+            </div>
+          </div>
+
+          <!-- Vintage Accordion -->
+          <div style="background-color: #e2d7cb; border-radius: 0.5rem; padding: 1.5rem; margin-top: 2rem;">
+            <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1.5rem;">Informações Técnicas por Safra</h3>
+            <div class="accordion-container">
+              <!-- Safra 2024 -->
+              <div class="accordion-item active">
+                <button class="accordion-trigger">
+                  <span style="font-size: 1.25rem; font-weight: 600;">Safra 2024</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <div style="padding-top: 1rem;">
+                    <div style="background-color: rgba(0,0,0,0.05); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                      <div style="margin-bottom: 1rem;">
+                        <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem;">Perfil Aromático</h4>
+                        <p style="color: hsl(var(--foreground)); line-height: 1.75;">Notas intensas de frutas vermelhas maduras, com toques de especiarias doces e um leve fundo de carvalho tostado.</p>
+                      </div>
+                      <div>
+                        <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem;">Perfil Gustativo</h4>
+                        <p style="color: hsl(var(--foreground)); line-height: 1.75;">Entrada macia e elegante, com taninos sedosos e estrutura equilibrada. Frutas negras em destaque com final longo e persistente.</p>
+                      </div>
+                    </div>
+                    <div style="background-color: rgba(0,0,0,0.05); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                      <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">Notas de Vinificação</h4>
+                      <p style="color: hsl(var(--foreground)); line-height: 1.75;">Fermentação em tanques de aço inoxidável a temperatura controlada (26-28°C), seguida de maceração pós-fermentativa de 15 dias. Estágio de 12 meses em barricas francesas de carvalho.</p>
+                    </div>
+                    <div style="background-color: rgba(123,31,46,0.1); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                      <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">Comentário do Enólogo</h4>
+                      <p style="color: hsl(var(--foreground)); line-height: 1.75; font-style: italic;">"Uma safra excepcional que demonstra o melhor terroir da região. A combinação perfeita entre maturação fenólica e acidez natural resultou num vinho de grande elegância."</p>
+                    </div>
+                    <div style="background-color: rgba(0,0,0,0.05); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                      <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">Harmonizações Sugeridas</h4>
+                      <p style="color: hsl(var(--foreground)); line-height: 1.75;">Carnes vermelhas grelhadas, massas com molhos intensos, queijos maturados, cordeiro assado com ervas.</p>
+                    </div>
+                    <div style="background-color: rgba(0,0,0,0.05); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                      <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">Potencial de Guarda e Evolução</h4>
+                      <p style="color: hsl(var(--foreground)); line-height: 1.75;">Potencial de guarda de 8-10 anos. Evoluirá ganhando complexidade aromática e maior integração dos taninos.</p>
+                    </div>
+                    <div style="background-color: rgba(0,43,35,0.1); border-radius: 0.5rem; padding: 1.5rem;">
+                      <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">Prêmios e Reconhecimentos</h4>
+                      <p style="font-weight: 500;">94 pontos Wine Spectator • Medalha de Ouro Concurso Internacional de Vinhos 2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Safra 2023 -->
+              <div class="accordion-item">
+                <button class="accordion-trigger">
+                  <span style="font-size: 1.25rem; font-weight: 600;">Safra 2023</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <div style="padding-top: 1rem;">
+                    <div style="background-color: rgba(0,0,0,0.05); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                      <div style="margin-bottom: 1rem;">
+                        <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem;">Perfil Aromático</h4>
+                        <p style="color: hsl(var(--foreground)); line-height: 1.75;">Perfil aromático complexo com frutas negras, violetas, especiarias e notas defumadas sutis.</p>
+                      </div>
+                      <div>
+                        <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem;">Perfil Gustativo</h4>
+                        <p style="color: hsl(var(--foreground)); line-height: 1.75;">Corpo médio a encorpado, taninos maduros e bem integrados. Acidez vibrante que proporciona frescor e longevidade.</p>
+                      </div>
+                    </div>
+                    <div style="background-color: rgba(0,0,0,0.05); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                      <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">Notas de Vinificação</h4>
+                      <p style="color: hsl(var(--foreground)); line-height: 1.75;">Desengace total, fermentação com leveduras autóctones, maceração de 18 dias. Amadurecimento de 14 meses em barricas francesas (30% novas).</p>
+                    </div>
+                    <div style="background-color: rgba(123,31,46,0.1); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                      <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">Comentário do Enólogo</h4>
+                      <p style="color: hsl(var(--foreground)); line-height: 1.75; font-style: italic;">"Safra de características climáticas ideais. A amplitude térmica perfeita permitiu maturação gradual, resultando em uvas de excepcional qualidade."</p>
+                    </div>
+                    <div style="background-color: rgba(0,0,0,0.05); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                      <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">Harmonizações Sugeridas</h4>
+                      <p style="color: hsl(var(--foreground)); line-height: 1.75;">Risotos trufados, caça, pratos à base de cogumelos, queijos de pasta dura.</p>
+                    </div>
+                    <div style="background-color: rgba(0,0,0,0.05); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                      <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">Potencial de Guarda e Evolução</h4>
+                      <p style="color: hsl(var(--foreground)); line-height: 1.75;">Excelente potencial de evolução: 10-12 anos. Recomenda-se decantação de 1 hora antes do consumo.</p>
+                    </div>
+                    <div style="background-color: rgba(0,43,35,0.1); border-radius: 0.5rem; padding: 1.5rem;">
+                      <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">Prêmios e Reconhecimentos</h4>
+                      <p style="font-weight: 500;">95 pontos James Suckling • Melhor Vinho Nacional 2023 - Revista de Vinhos</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Safra 2022 -->
+              <div class="accordion-item">
+                <button class="accordion-trigger">
+                  <span style="font-size: 1.25rem; font-weight: 600;">Safra 2022</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <div style="padding-top: 1rem;">
+                    <div style="background-color: rgba(0,0,0,0.05); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                      <div style="margin-bottom: 1rem;">
+                        <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem;">Perfil Aromático</h4>
+                        <p style="color: hsl(var(--foreground)); line-height: 1.75;">Bouquet elegante de cerejas, ameixas, pimenta preta e tons herbáceos sutis de eucalipto.</p>
+                      </div>
+                      <div>
+                        <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem;">Perfil Gustativo</h4>
+                        <p style="color: hsl(var(--foreground)); line-height: 1.75;">Estrutura sólida com taninos presentes mas polidos. Equilíbrio notável entre fruta, acidez e carvalho.</p>
+                      </div>
+                    </div>
+                    <div style="background-color: rgba(0,0,0,0.05); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                      <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">Notas de Vinificação</h4>
+                      <p style="color: hsl(var(--foreground)); line-height: 1.75;">Seleção rigorosa de uvas, fermentação em tanques pequenos para maior controle. Estágio de 16 meses em barricas de carvalho francês e americano (50/50).</p>
+                    </div>
+                    <div style="background-color: rgba(123,31,46,0.1); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                      <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">Comentário do Enólogo</h4>
+                      <p style="color: hsl(var(--foreground)); line-height: 1.75; font-style: italic;">"Ano de desafios climáticos que exigiu seleção criteriosa. O resultado é um vinho de caráter marcante e personalidade única."</p>
+                    </div>
+                    <div style="background-color: rgba(0,0,0,0.05); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                      <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">Harmonizações Sugeridas</h4>
+                      <p style="color: hsl(var(--foreground)); line-height: 1.75;">Churrasco, feijoada gourmet, estufado de javali, queijos azuis.</p>
+                    </div>
+                    <div style="background-color: rgba(0,0,0,0.05); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                      <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">Potencial de Guarda e Evolução</h4>
+                      <p style="color: hsl(var(--foreground)); line-height: 1.75;">Já apresenta excelente bebibilidade, mas pode evoluir por mais 6-8 anos.</p>
+                    </div>
+                    <div style="background-color: rgba(0,43,35,0.1); border-radius: 0.5rem; padding: 1.5rem;">
+                      <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">Prêmios e Reconhecimentos</h4>
+                      <p style="font-weight: 500;">92 pontos Decanter • Medalha de Prata Expovinis 2023</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Safra 2021 -->
+              <div class="accordion-item">
+                <button class="accordion-trigger">
+                  <span style="font-size: 1.25rem; font-weight: 600;">Safra 2021</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <div style="padding-top: 1rem;">
+                    <div style="background-color: rgba(0,0,0,0.05); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                      <div style="margin-bottom: 1rem;">
+                        <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem;">Perfil Aromático</h4>
+                        <p style="color: hsl(var(--foreground)); line-height: 1.75;">Aromas terciários desenvolvidos: couro, tabaco, frutas secas, especiarias complexas e baunilha.</p>
+                      </div>
+                      <div>
+                        <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem;">Perfil Gustativo</h4>
+                        <p style="color: hsl(var(--foreground)); line-height: 1.75;">Maturidade evidente, taninos completamente integrados. Textura aveludada e final prolongado com nuances minerais.</p>
+                      </div>
+                    </div>
+                    <div style="background-color: rgba(0,0,0,0.05); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                      <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">Notas de Vinificação</h4>
+                      <p style="color: hsl(var(--foreground)); line-height: 1.75;">Vindima manual seletiva, fermentação tradicional em lagares de pedra. Estágio de 18 meses em barricas francesas de 2º uso.</p>
+                    </div>
+                    <div style="background-color: rgba(123,31,46,0.1); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                      <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">Comentário do Enólogo</h4>
+                      <p style="color: hsl(var(--foreground)); line-height: 1.75; font-style: italic;">"Safra clássica de grande potencial. As condições climáticas excepcionais produziram uvas de concentração e equilíbrio raros."</p>
+                    </div>
+                    <div style="background-color: rgba(0,0,0,0.05); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                      <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">Harmonizações Sugeridas</h4>
+                      <p style="color: hsl(var(--foreground)); line-height: 1.75;">Carnes de caça nobres, pratos trufados, queijos curados de longa maturação.</p>
+                    </div>
+                    <div style="background-color: rgba(0,0,0,0.05); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                      <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">Potencial de Guarda e Evolução</h4>
+                      <p style="color: hsl(var(--foreground)); line-height: 1.75;">Ápice de consumo atual. Ainda evoluirá por 5-7 anos para apreciadores de vinhos mais evoluídos.</p>
+                    </div>
+                    <div style="background-color: rgba(0,43,35,0.1); border-radius: 0.5rem; padding: 1.5rem;">
+                      <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">Prêmios e Reconhecimentos</h4>
+                      <p style="font-weight: 500;">96 pontos Wine Enthusiast • Vinho do Ano 2021 - Associação Brasileira de Sommeliers</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section scroll-animate">
+                    <div class="logo-container" style="margin-bottom: 0rem;">
+                        <img src="../images/logo-avidos.png" alt="Vinícola Premium" class="logo">
+                    </div>
+                    <p>
+                       Vinhos que despertam paixão.
+                    </p>
+                </div>
+                
+                <div class="footer-section scroll-animate">
+                    <h3>Navegação</h3>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="historia.html">História</a>
+                        <a href="vinhos.html">Vinhos</a>
+                        <a href="vinhas.html">Vinhas</a>
+                        <a href="onde-encontrar.html">Onde Encontrar</a>
+                        <a href="dicas.html">Dicas</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section scroll-animate">
+                    <h3>Contato</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span>+55 (11) 1234-5678</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>contato@vinicolapremium.com.br</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>Rua das Vinhas, 123<br>Bento Gonçalves - RS<br>CEP 95700-000</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section scroll-animate">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="https://facebook.com" class="social-link" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" class="social-link" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com" class="social-link" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div style="margin-top: 1.5rem;">
+                        <p style="font-size: 0.875rem; margin-bottom: 0.5rem; color: rgba(215, 200, 182, 0.6);">Idioma:</p>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <a href="index.html" style="font-weight: 600; color: var(--color-beige-light);">PT</a>
+                            <span style="color: rgba(215, 200, 182, 0.4);">/</span>
+                            <a href="../eng/index.html" style="font-weight: 600; color: rgba(215, 200, 182, 0.6);">EN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom scroll-animate">
+                <p style="color: rgba(215, 200, 182, 0.6);">© 2025 Ávidos Douro. Todos os direitos reservados.</p>
+                <div>
+                    <a href="politica-privacidade.html" style="color: rgba(215, 200, 182, 0.6);">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+  <!-- Cookie Consent Modal -->
+  <div id="cookieModal" class="modal">
+    <div class="modal-content cookie-modal">
+      <h2>Consentimento de Cookies</h2>
+      <p style="color: hsl(var(--beige-light));">Utilizamos cookies para melhorar sua experiência em nosso site. Ao continuar navegando, você concorda com nossa política de cookies.</p>
+      <div class="modal-actions">
+        <button id="acceptCookies" class="btn btn-primary">Aceitar</button>
+        <button id="declineCookies" class="btn btn-outline">Recusar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Age Gate Modal -->
+  <div id="ageGateModal" class="modal">
+    <div class="modal-content age-gate-modal">
+      <h2>Verificação de Idade</h2>
+      <p>Este site é destinado a maiores de 18 anos. Você tem idade legal para consumir bebidas alcoólicas?</p>
+      <div class="modal-actions">
+        <button id="confirmAge" class="btn btn-primary">Sim, tenho 18+ anos</button>
+        <button id="denyAge" class="btn btn-outline">Não</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/header.js"></script>
+  <script src="../js/scroll-animations.js"></script>
+  <script src="../js/accordion.js"></script>
+  <script src="../js/tabs.js"></script>
+  <script src="../js/cookie-consent.js"></script>
+  <script src="../js/age-gate.js"></script>
+  
+  <script>
+    // Wine data
+    const winesData = {
+      'apaixonado': {
+        name: 'Apaixonado',
+        image: '../images/garrafa-apaixonado.png',
+        region: 'Vale dos Vinhedos, RS',
+        grape: 'Cabernet Sauvignon e Merlot',
+        description: 'Nosso Reserva Tinto é um blend magistral que representa o ápice da nossa produção. Elaborado com uvas selecionadas dos melhores talhões de nossos vinhedos, este vinho expressa perfeitamente o terroir único da região.'
+      },
+      'branco-premium': {
+        name: 'Branco Premium',
+        image: '../images/wine-2.png',
+        region: 'Serra Gaúcha, RS',
+        grape: 'Chardonnay',
+        description: 'Um branco sofisticado de caráter único, produzido com uvas Chardonnay cultivadas em altitude. Fermentação e maturação em barricas de carvalho francês conferem complexidade e elegância.'
+      },
+      'rose-elegance': {
+        name: 'Rosé Elegance',
+        image: '../images/wine-3.png',
+        region: 'Campanha Gaúcha, RS',
+        grape: 'Pinot Noir',
+        description: 'Rosé delicado e refinado, elaborado pelo método de sangria. Apresenta coloração salmão vibrante e frescor característico, perfeito para ocasiões especiais.'
+      },
+      'cabernet-sauvignon': {
+        name: 'Cabernet Sauvignon',
+        image: '../images/wine-4.png',
+        region: 'Vale dos Vinhedos, RS',
+        grape: 'Cabernet Sauvignon',
+        description: 'Monovarietal clássico que expressa toda a nobreza da casta Cabernet Sauvignon. Estruturado e complexo, ideal para envelhecimento prolongado.'
+      },
+      'merlot-classico': {
+        name: 'Merlot Clássico',
+        image: '../images/wine-5.png',
+        region: 'Serra Gaúcha, RS',
+        grape: 'Merlot',
+        description: 'Merlot de textura aveludada e taninos macios. Aromático e elegante, combina perfeitamente tradição e modernidade na vinificação.'
+      },
+      'chardonnay-especial': {
+        name: 'Chardonnay Especial',
+        image: '../images/wine-6.png',
+        region: 'Planalto Catarinense, SC',
+        grape: 'Chardonnay',
+        description: 'Chardonnay de altitude com frescor e mineralidade marcantes. Fermentação em barricas confere notas amanteigadas e complexidade aromática.'
+      },
+      'espumante-brut': {
+        name: 'Espumante Brut',
+        image: '../images/wine-7.png',
+        region: 'Serra Gaúcha, RS',
+        grape: 'Chardonnay e Pinot Noir',
+        description: 'Espumante método tradicional com segunda fermentação em garrafa. Perlage fino e persistente, elegância e finesse em cada taça.'
+      }
+    };
+
+    // Get wine ID from URL parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const wineId = urlParams.get('id') || 'reserva-tinto';
+    const wine = winesData[wineId];
+
+    if (wine) {
+      document.getElementById('wine-name').textContent = wine.name;
+      document.getElementById('wine-region').textContent = wine.region;
+      document.getElementById('wine-image').src = wine.image;
+      document.getElementById('wine-image').alt = wine.name;
+      document.getElementById('wine-description').textContent = wine.description;
+      document.getElementById('wine-region-detail').textContent = wine.region;
+      document.getElementById('wine-grape').textContent = wine.grape;
+      document.title = `${wine.name} - Vinícola Premium`;
+    }
+  </script>
+</body>
+</html>

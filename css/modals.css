@@ -1,0 +1,262 @@
+/* Modal and Overlay Styles */
+
+/* Age Gate */
+.age-gate {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(61, 22, 22, 0.95);
+  backdrop-filter: blur(8px);
+  animation: fadeIn 0.6s ease-out;
+}
+
+.age-gate-content {
+  max-width: 28rem;
+  width: 100%;
+  margin: 0 1rem;
+  background: var(--color-card);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: scaleIn 0.5s ease-out;
+  text-align: center;
+}
+
+.age-gate-icon {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1.5rem;
+  color: var(--color-primary);
+}
+
+.age-gate-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-foreground);
+}
+
+.age-gate-text {
+  color: rgba(38, 38, 38, 0.7);
+  margin-bottom: 2rem;
+  line-height: 1.75;
+}
+
+.age-gate-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.age-gate-buttons .btn {
+  flex: 1;
+  height: 3rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.age-gate-disclaimer {
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  color: rgba(38, 38, 38, 0.6);
+}
+
+/* Cookie Consent */
+.cookie-consent {
+  position: fixed;
+  inset: 0;
+  z-index: 150;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  padding: 1rem;
+}
+
+.cookie-consent-content {
+  background: var(--color-background);
+  border: 1px solid rgba(124, 113, 100, 0.3);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  max-width: 42rem;
+  width: 100%;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  animation: slideUp 0.4s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cookie-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.cookie-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+}
+
+.cookie-close {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.cookie-close:hover {
+  color: white;
+}
+
+.cookie-text {
+  color: rgba(215, 200, 182, 0.8);
+  font-size: 0.875rem;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.cookie-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.cookie-buttons .btn {
+  flex: 1;
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 2rem;
+}
+
+.lightbox.hidden {
+  display: none !important;
+}
+
+.lightbox.active {
+  display: flex;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 80rem;
+  width: 100%;
+}
+
+.lightbox-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+}
+
+.lightbox-caption {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.lightbox-nav:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.lightbox-prev {
+  left: 1rem;
+}
+
+.lightbox-next {
+  right: 1rem;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: var(--transition-fast);
+}
+
+.lightbox-close:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+
+/* Hidden Class */
+.hidden {
+  display: none !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cookie-buttons {
+    flex-direction: column;
+  }
+  
+  .age-gate-buttons {
+    flex-direction: column;
+  }
+  
+  .lightbox {
+    padding: 1rem;
+  }
+  
+  .lightbox-nav {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}

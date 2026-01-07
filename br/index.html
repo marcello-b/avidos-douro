@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ávidos Douro - Produzindo vinhos de excelência com paixão no Vale do Douro, em Portugal. Explore nossa seleção de vinhos premium.">
+    <meta name="keywords" content="vinho, vinícola, vinhos premium, vinhos portugueses, Douro, vinho tinto, vinho branco, vinho rosé">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <title>Ávidos Douro</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/modals.css">
+
+
+</head>
+<body>
+    <!-- Cookie Consent -->
+    <div id="cookieConsent" class="cookie-consent hidden">
+        <div class="cookie-consent-content">
+            <div class="cookie-header">
+                <h2 class="cookie-title">Aviso de Cookies</h2>
+                <button class="cookie-close" aria-label="Fechar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <p class="cookie-text">
+                Utilizamos cookies para melhorar a sua experiência de navegação, personalizar conteúdo 
+                e anúncios, fornecer funcionalidades de redes sociais e analisar o nosso tráfego. 
+                Ao clicar em "Aceitar", você concorda com o uso de cookies conforme descrito na nossa 
+                Política de Privacidade.
+            </p>
+            <div class="cookie-buttons">
+                <button id="acceptCookies" class="btn btn-primary">Aceitar Cookies</button>
+                <button id="rejectCookies" class="btn btn-outline">Rejeitar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Age Gate -->
+    <div id="ageGate" class="age-gate hidden">
+        <div class="age-gate-content">
+            <h2 class="age-gate-title">Verificação de Idade</h2>
+            <p class="age-gate-text">
+                Para acessar este site, você precisa ter mais de 18 anos.<br>
+                Você tem 18 anos ou mais?
+            </p>
+            <div class="age-gate-buttons">
+                <button id="ageYes" class="btn btn-primary">Sim, 18+</button>
+                <button id="ageNo" class="btn btn-outline">Não</button>
+            </div>
+            <p class="age-gate-disclaimer">
+                Este site exige verificação de idade conforme legislação vigente.
+            </p>
+        </div>
+    </div>
+
+    <!-- Header -->
+
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo-container">
+            <img src="../images/logo-avidos.svg" alt="Ávidos Douro" class="logo">
+            </a>
+            
+            <nav class="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="historia.html" class="nav-link">História</a>
+            <a href="vinhos.html?vinho=todos" class="nav-link">Vinhos</a>
+            <a href="vinhas.html" class="nav-link">Vinhas</a>
+            <a href="onde-encontrar.html" class="nav-link">Onde Encontrar</a>
+            <a href="dicas.html" class="nav-link">Dicas</a>
+
+            <!-- Language selector -->
+            <div class="lang-selector">
+                <button class="lang-trigger" aria-haspopup="true" aria-expanded="false" aria-label="Selecionar idioma">
+                <i class="fas fa-globe"></i>
+                </button>
+                <div class="lang-menu" role="menu">
+                <a href="#" class="lang-option" role="menuitem" data-lang="pt">PT</a>
+                <a href="#" class="lang-option" role="menuitem" data-lang="eng">ENG</a>
+                </div>
+            </div>
+            </nav>
+            
+            <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <div class="mobile-menu">
+            <nav class="mobile-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="historia.html" class="nav-link">História</a>
+            <a href="vinhos.html?vinho=todos" class="nav-link">Vinhos</a>
+            <a href="vinhas.html" class="nav-link">Vinhas</a>
+            <a href="onde-encontrar.html" class="nav-link">Onde Encontrar</a>
+            <a href="dicas.html" class="nav-link">Dicas</a>
+
+            <!-- Language selector (mobile) -->
+            <div class="lang-selector mobile">
+                <button class="lang-trigger" aria-haspopup="true" aria-expanded="false" aria-label="Selecionar idioma">
+                <i class="fas fa-globe"></i>
+                <!-- <span class="lang-label">Idioma</span> -->
+                </button>
+                <div class="lang-menu" role="menu">
+                <a href="#" class="lang-option" role="menuitem" data-lang="pt">PT</a>
+                <a href="#" class="lang-option" role="menuitem" data-lang="eng">ENG</a>
+                </div>
+            </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Hero Carousel -->
+    <section class="carousel-container">
+        <div class="carousel-slide active">
+            <div class="hero-background" style="background-image: url('../images/hero-4.jpg');"></div>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="carousel-slide">
+            <div class="hero-background" style="background-image: url('../images/hero-3.jpg');"></div>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="carousel-slide">
+            <div class="hero-background" style="background-image: url('../images/hero-6.jpg');"></div>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="carousel-slide">
+            <div class="hero-background" style="background-image: url('../images/hero-7.jpg');"></div>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <img src="../images/logo-avidos.png" alt="Ávidos Douro" class="carousel-logo animate-fade-in">
+            <!-- <h1 class="hero-title carousel-caption">
+                Vinhedos de Excelência
+            </h1> -->
+        </div>
+        
+        <div class="carousel-dots">
+            <button class="carousel-dot active" data-slide="0" aria-label="Slide 1"></button>
+            <button class="carousel-dot" data-slide="1" aria-label="Slide 2"></button>
+            <button class="carousel-dot" data-slide="2" aria-label="Slide 3"></button>
+            <button class="carousel-dot" data-slide="3" aria-label="Slide 4"></button>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="content-section bg-brown">
+        <div class="container text-center animate-fade-up">
+            <h2 class="section-title-light scroll-animate">PAIXÃO EM CADA GOTA</h2>
+            <div class="section-divider">
+                <div class="section-divider-line-bg"></div>
+                    <svg class="section-divider-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10 2L12.5 7.5L18 10L12.5 12.5L10 18L7.5 12.5L2 10L7.5 7.5L10 2Z" opacity="0.6"/>
+                    </svg>
+                <div class="section-divider-line-bg"></div>
+            </div>
+            <p class="section-text-light scroll-animate">
+                Há mais de 70 anos cultivamos vinhedos excepcionais e produzimos
+                vinhos que celebram a tradição e a excelência. Cada garrafa é uma
+                obra-prima artesanal, reflexo do nosso compromisso com a qualidade
+                premium.
+            </p>
+        </div>
+    </section>
+
+    <!-- Wines Grid -->
+    <section class="content-section bg-beige">
+        <div class="container">
+            <div class="text-center animate-fade-up margin-bottom-4">
+                <h2 class="section-title scroll-animate">NOSSOS VINHOS</h2>
+                <div class="section-divider">
+                    <div class="section-divider-line"></div>
+                    <svg class="section-divider-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10 2L12.5 7.5L18 10L12.5 12.5L10 18L7.5 12.5L2 10L7.5 7.5L10 2Z" opacity="0.6"/>
+                    </svg>
+                    <div class="section-divider-line"></div>
+                </div>
+                <p class="section-text scroll-animate">
+                    Explore nossa seleção premium de vinhos, cuidadosamente elaborados
+                    para proporcionar experiências únicas.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-4 scroll-animate animate-fade-up">
+                <a href="vinhos.html?vinho=apaixonado-tinto" class="wine-card scroll-animate">
+                    <div class="wine-card-image">
+                        <img src="../images/garrafa_apaixonado.png" alt="Apaixonado Tinto">
+                    </div>
+                    <div class="wine-card-content">
+                        <h3 class="wine-card-title">APAIXONADO</h3>
+                    </div>
+                </a>
+                
+                <a href="vinhos.html?vinho=apaixonado-branco" class="wine-card scroll-animate">
+                    <div class="wine-card-image">
+                        <img src="../images/garrafa_apaixonado_branco.png" alt="Apaixonado Branco">
+                    </div>
+                    <div class="wine-card-content">
+                        <h3 class="wine-card-title">APAIXONADO BRANCO</h3>
+                    </div>
+                </a>
+                
+                <a href="vinhos.html?vinho=apaixonado-rose" class="wine-card scroll-animate">
+                    <div class="wine-card-image">
+                        <img src="../images/garrafa_apaixonado_rose.png" alt="Apaixonado Rosé">
+                    </div>
+                    <div class="wine-card-content">
+                        <h3 class="wine-card-title">APAIXONADO ROSÉ</h3>
+                    </div>
+                </a>
+
+                <a href="vinhos.html?vinho=apaixonado-touriga" class="wine-card scroll-animate">
+                    <div class="wine-card-image">
+                        <img src="../images/garrafa_apaixonado_touriga.png" alt="Apaixonado Touriga - Tinto">
+                    </div>
+                    <div class="wine-card-content">
+                        <h3 class="wine-card-title">APAIXONADO TOURIGA</h3>
+                    </div>
+                </a>
+
+                <a href="vinhos.html?vinho=avidos" class="wine-card scroll-animate">
+                    <div class="wine-card-image">
+                        <img src="../images/garrafa_avidos.png" alt="Ávidos Tinto">
+                    </div>
+                    <div class="wine-card-content">
+                        <h3 class="wine-card-title">ÁVIDOS</h3>
+                    </div>
+                </a>
+                
+                <a href="vinhos.html?vinho=anonimo" class="wine-card scroll-animate">
+                    <div class="wine-card-image">
+                        <img src="../images/garrafa_anonimo.png" alt="Anônimo Tinto">
+                    </div>
+                    <div class="wine-card-content">
+                        <h3 class="wine-card-title">ANÔNIMO</h3>
+                    </div>
+                </a>
+                
+                <a href="vinhos.html?vinho=amavio" class="wine-card scroll-animate">
+                    <div class="wine-card-image">
+                        <img src="../images/garrafa_amavio.png" alt="Amávio Tinto">
+                    </div>
+                    <div class="wine-card-content">
+            <h3 class="wine-card-title">AMÁVIO</h3>
+                    </div>
+                </a>
+                
+                
+            </div>
+        </div>
+    </section>
+
+
+    <div id="footer-placeholder"></div>
+
+   <script>
+    fetch("partials/footer.html")        // caminho para o arquivo externo
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+        })
+        .catch(error => console.error("Erro ao carregar footer:", error));
+    </script>
+
+
+    <!-- Scripts -->
+    <script src="../js/cookie-consent.js"></script>
+    <script src="../js/age-gate.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/carousel.js"></script>
+    <script src="../js/scroll-animations.js"></script>
+    <script src="../js/slides.js"></script>
+
+
+</body>
+</html>

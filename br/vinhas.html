@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça nossas vinhas - terroir de excelência onde tradição encontra a excelência - Vinícola Premium.">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link rel="manifest" href="../favicon/site.webmanifest">
+  <title>Ávidos Douro | Nossas Vinhas</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/modals.css">
+</head>
+<body>
+  <!-- Header -->
+   
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo-container">
+            <img src="../images/logo-avidos.svg" alt="Ávidos Douro" class="logo">
+            </a>
+            
+            <nav class="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="historia.html" class="nav-link">História</a>
+            <a href="vinhos.html?vinho=todos" class="nav-link">Vinhos</a>
+            <a href="vinhas.html" class="nav-link">Vinhas</a>
+            <a href="onde-encontrar.html" class="nav-link">Onde Encontrar</a>
+            <a href="dicas.html" class="nav-link">Dicas</a>
+
+            <!-- Language selector -->
+            <div class="lang-selector">
+                <button class="lang-trigger" aria-haspopup="true" aria-expanded="false" aria-label="Selecionar idioma">
+                <i class="fas fa-globe"></i>
+                </button>
+                <div class="lang-menu" role="menu">
+                <a href="#" class="lang-option" role="menuitem" data-lang="pt">PT</a>
+                <a href="#" class="lang-option" role="menuitem" data-lang="eng">ENG</a>
+                </div>
+            </div>
+            </nav>
+            
+            <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <div class="mobile-menu">
+            <nav class="mobile-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="historia.html" class="nav-link">História</a>
+            <a href="vinhos.html?vinho=todos" class="nav-link">Vinhos</a>
+            <a href="vinhas.html" class="nav-link">Vinhas</a>
+            <a href="onde-encontrar.html" class="nav-link">Onde Encontrar</a>
+            <a href="dicas.html" class="nav-link">Dicas</a>
+
+            <!-- Language selector (mobile) -->
+            <div class="lang-selector mobile">
+                <button class="lang-trigger" aria-haspopup="true" aria-expanded="false" aria-label="Selecionar idioma">
+                <i class="fas fa-globe"></i>
+                <!-- <span class="lang-label">Idioma</span> -->
+                </button>
+                <div class="lang-menu" role="menu">
+                <a href="#" class="lang-option" role="menuitem" data-lang="pt">PT</a>
+                <a href="#" class="lang-option" role="menuitem" data-lang="eng">ENG</a>
+                </div>
+            </div>
+            </nav>
+        </div>
+    </header>
+
+  <!-- Hero Banner -->
+  <section class="hero-banner">
+    <div class="hero-background" style="background-image: url('../images/hero-1.jpg')"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div>
+        <h1 class="hero-title animate-fade-up">Nossas Vinhas</h1>
+        <p class="hero-subtitle animate-fade-up">Onde a Tradição Encontra a Excelência</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="content-section  bg-beige">
+    <div class="container">
+      <!-- Introduction -->
+      <div class="scroll-animate content-header animate-fade-up">
+        <h2 class="section-title">Terroir de Excelência</h2>
+        <div class="section-divider"></div>
+        <p class="section-text">
+          Nossos vinhedos estão localizados em regiões privilegiadas do Sul do Brasil, 
+          onde o clima temperado, solo rico e altitude ideal criam condições perfeitas 
+          para o cultivo de uvas nobres.
+        </p>
+        <p class="section-text">
+          Com mais de 70 anos de tradição vitivinícola, cuidamos de cada parreira com 
+          dedicação artesanal, respeitando o ciclo natural das estações e aplicando 
+          técnicas sustentáveis que garantem a máxima qualidade de nossas uvas.
+        </p>
+      </div>
+
+      <!-- Gallery -->
+      
+      
+      <div class="gallery-grid scroll-animate animate-fade-up">
+        <div class="gallery-item" data-image="../images/vineyard-1.jpg" data-caption="Vinhas ao pôr do sol">
+          <img src="../images/vineyard-1.jpg" alt="Vinhas ao pôr do sol">
+          <div class="gallery-overlay"></div>
+        </div>
+        <div class="gallery-item" data-image="../images/vineyard-2.jpg" data-caption="Uvas premium">
+          <img src="../images/vineyard-2.jpg" alt="Uvas premium">
+          <div class="gallery-overlay"></div>
+        </div>
+        <div class="gallery-item" data-image="../images/vineyard-3.jpg" data-caption="Barris de carvalho">
+          <img src="../images/vineyard-3.jpg" alt="Barris de carvalho">
+          <div class="gallery-overlay"></div>
+        </div>
+        <div class="gallery-item" data-image="../images/vineyard-4.jpg" data-caption="Terraços de vinhas">
+          <img src="../images/vineyard-4.jpg" alt="Terraços de vinhas">
+          <div class="gallery-overlay"></div>
+        </div>
+        <div class="gallery-item" data-image="../images/vineyard-5.jpg" data-caption="Colheita de uvas">
+          <img src="../images/vineyard-5.jpg" alt="Colheita de uvas">
+          <div class="gallery-overlay"></div>
+        </div>
+        <div class="gallery-item" data-image="../images/vineyard-6.jpg" data-caption="Vista aérea das vinhas">
+          <img src="../images/vineyard-6.jpg" alt="Vista aérea das vinhas">
+          <div class="gallery-overlay"></div>
+        </div>
+      </div>
+
+      <!-- Info Cards -->
+      <div class="grid grid-cols-2 scroll-animate animate-fade-up" style="max-width: 56rem; margin: 4rem auto 0;">
+        <div class="location-card">
+          <div class="location-header">
+            <h4 class="location-name">Localização</h4>
+          </div>
+          <p class="section-text">
+            Nossos vinhedos se estendem por hectares de colinas onduladas no Vale dos 
+            Vinhedos e Serra Gaúcha, regiões reconhecidas nacionalmente pela produção 
+            de vinhos de qualidade excepcional.
+          </p>
+        </div>
+        
+        <div class="location-card">
+          <div class="location-header">
+            <h4 class="location-name">Sustentabilidade</h4>
+          </div>
+          <p class="section-text">
+            Comprometidos com o meio ambiente, utilizamos práticas de viticultura 
+            sustentável, minimizando o uso de químicos e preservando a biodiversidade 
+            natural de nossas terras.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+<div class="lightbox hidden" id="lightbox">
+  <div class="lightbox-content">
+    
+    <img class="lightbox-image" src="" alt="">
+    <div class="lightbox-caption"></div>
+
+    <div class="lightbox-prev lightbox-nav">❮</div>
+    <div class="lightbox-next lightbox-nav">❯</div>
+
+    <div class="lightbox-close">&times;</div>
+  </div>
+</div>
+
+
+  <!-- Gallery Modal -->
+  <!-- <div id="galleryModal" class="modal-overlay hidden">
+    <div class="modal-content gallery-modal">
+      <button class="modal-close" aria-label="Fechar">&times;</button>
+      <button class="gallery-prev" aria-label="Anterior">‹</button>
+      <img id="galleryImage" src="" alt="" class="gallery-modal-image">
+      <button class="gallery-next" aria-label="Próxima">›</button>
+      <p id="galleryCaption" class="gallery-caption"></p>
+    </div>
+  </div> -->
+
+  <!-- Footer -->
+   
+  <div id="footer-placeholder"></div>
+
+   <script>
+    fetch("partials/footer.html")        // caminho para o arquivo externo
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+        })
+        .catch(error => console.error("Erro ao carregar footer:", error));
+    </script>
+
+  <!-- Cookie Consent -->
+  <div id="cookieConsent" class="cookie-consent hidden">
+    <div class="cookie-content">
+      <button class="cookie-close" aria-label="Fechar">&times;</button>
+      <h3>🍪 Cookies e Privacidade</h3>
+      <p>Utilizamos cookies para melhorar sua experiência em nosso site. Ao continuar navegando, você concorda com nossa <a href="politica-privacidade.html">Política de Privacidade</a>.</p>
+      <div class="cookie-buttons">
+        <button id="acceptCookies" class="btn btn-primary">Aceitar</button>
+        <button id="rejectCookies" class="btn btn-secondary">Recusar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Age Gate -->
+  <div id="ageGate" class="modal-overlay hidden">
+    <div class="modal-content age-gate">
+      <h2>Verificação de Idade</h2>
+      <p>Você tem 18 anos ou mais?</p>
+      <p class="age-disclaimer">O consumo de bebidas alcoólicas é proibido para menores de 18 anos.</p>
+      <div class="age-buttons">
+        <button id="ageYes" class="btn btn-primary">Sim, 18+</button>
+        <button id="ageNo" class="btn btn-secondary">Não</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/header.js"></script>
+  <script src="../js/cookie-consent.js"></script>
+  <script src="../js/age-gate.js"></script>
+  <script src="../js/scroll-animations.js"></script>
+  <script src="../js/gallery.js"></script>
+</body>
+</html>
