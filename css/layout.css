@@ -54,6 +54,10 @@
   text-align: center;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .text-light {
   color: var(--color-beige-light);
 }
