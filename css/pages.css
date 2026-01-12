@@ -312,6 +312,10 @@
   background-color: #7c7164;
 }
 
+.bg-light-brown {
+  background-color: #b3a494;
+}
+
 .section-title {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
@@ -701,6 +705,28 @@
   color: var(--color-beige-light);
 }
 
+.image-col { 
+  flex: 1; min-height: 600px;  
+  background-image: url("../images/azeite-cupido.jpg"); 
+  background-size: 
+  cover; background-position: 
+  center; border: 
+  none; margin: 0; 
+}
+
+.text-col { 
+  flex: 1; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 2rem; 
+}
+
+.no-margin { 
+  margin: 0; 
+  padding: 0; 
+}
+
 
 /* Responsive */
 @media (max-width: 1024px) {
@@ -736,5 +762,21 @@
   
   .tabs-list {
     grid-template-columns: 1fr;
+  }
+
+  .highlight { 
+    flex-direction: column;
+  } 
+
+  .image-col { 
+    order: 1; 
+    width: 100%; 
+    min-height: 400px; 
+  } 
+  
+  .text-col { 
+    order: 2;  
+    width: 100%; 
+    padding: 1.5rem; 
   }
 }
