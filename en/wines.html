@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore nossa seleção premium de vinhos tintos, brancos, rosés - Ávidos Douro.">
+  <meta name="description" content="Explore Our Premium Selection of Red, White, and Rosé Wines - Ávidos Douro.">
   <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
   <link rel="manifest" href="../favicon/site.webmanifest">
-  <title>Ávidos Douro | Nossos Vinhos</title>
+  <title>Ávidos Douro | Our Wines</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,12 +36,12 @@
             
             <nav class="nav-menu">
             <a href="index.html" class="nav-link">Home</a>
-            <a href="historia.html" class="nav-link">História</a>
-            <a href="vinhos.html?vinho=todos" class="nav-link active">Vinhos</a>
-            <a href="vinhas.html" class="nav-link">Vinhas</a>
-            <a href="azeite-cupido.html" class="nav-link">Cupido</a>
-            <a href="onde-encontrar.html" class="nav-link">Onde Encontrar</a>
-            <a href="dicas.html" class="nav-link">Dicas</a>
+            <a href="history.html" class="nav-link">History</a>
+            <a href="wines.html?wine=all" class="nav-link active">Wines</a>
+            <a href="vineyards.html" class="nav-link">Vineyards</a>
+            <a href="cupido-olive-oil.html" class="nav-link">Cupido</a>
+            <a href="where-to-find.html" class="nav-link">Where to find</a>
+            <a href="tips.html" class="nav-link">Tips</a>
 
             <!-- Language selector -->
             <div class="lang-selector">
@@ -49,8 +49,8 @@
                 <i class="fas fa-globe"></i>
                 </button>
                 <div class="lang-menu" role="menu">
-                <a href="#" class="lang-option" role="menuitem" data-lang="pt">PT</a>
-                <a href="../en/index.html" class="lang-option" role="menuitem" data-lang="eng">EN</a>
+                <a href="../br/index.html" class="lang-option" role="menuitem" data-lang="pt">PT</a>
+                <a href="#" class="lang-option" role="menuitem" data-lang="eng">EN</a>
                 </div>
             </div>
             </nav>
@@ -64,11 +64,11 @@
             <nav class="mobile-nav">
             <a href="index.html" class="nav-link">Home</a>
             <a href="historia.html" class="nav-link">História</a>
-            <a href="vinhos.html?vinho=todos" class="nav-link">Vinhos</a>
-            <a href="vinhas.html" class="nav-link">Vinhas</a>
-            <a href="azeite-cupido.html" class="nav-link">Cupido</a>
-            <a href="onde-encontrar.html" class="nav-link">Onde Encontrar</a>
-            <a href="dicas.html" class="nav-link">Dicas</a>
+            <a href="wines.html?wine=all" class="nav-link">Wines</a>
+            <a href="vineyards.html" class="nav-link">Vineyards</a>
+            <a href="cupido-olive-oil.html" class="nav-link">Cupido</a>
+            <a href="where-to-find.html" class="nav-link">Where to find</a>
+            <a href="tips.html" class="nav-link">Tips</a>
 
             <!-- Language selector (mobile) -->
             <div class="lang-selector mobile">
@@ -77,8 +77,8 @@
                 <!-- <span class="lang-label">Idioma</span> -->
                 </button>
                 <div class="lang-menu" role="menu">
-                <a href="#" class="lang-option" role="menuitem" data-lang="pt">PT</a>
-                <a href="../en/index.html" class="lang-option" role="menuitem" data-lang="eng">EN</a>
+                <a href="../br/index.html" class="lang-option" role="menuitem" data-lang="pt">PT</a>
+                <a href="#" class="lang-option" role="menuitem" data-lang="eng">EN</a>
                 </div>
             </div>
             </nav>
@@ -92,8 +92,8 @@
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <div>
-        <h1 class="hero-title animate-fade-up">Nossos Vinhos</h1>
-        <p class="hero-subtitle animate-fade-up">Vinhos apaixonantes</p>
+        <h1 class="hero-title animate-fade-up">Our Wines</h1>
+        <p class="hero-subtitle animate-fade-up">Wines to Fall in Love With</p>
       </div>
     </div>
   </section>
@@ -102,7 +102,7 @@
 
     <main id="conteudo-produto">
         <!-- Conteúdo dinâmico será inserido aqui -->
-        <p>Carregando produto...</p>
+        <p>Loading Wines...</p>
     </main>
   
 
@@ -116,18 +116,18 @@
         .then(data => {
             document.getElementById("footer-placeholder").innerHTML = data;
         })
-        .catch(error => console.error("Erro ao carregar footer:", error));
+        .catch(error => console.error("Error loading footer:", error));
     </script>
 
   <!-- Cookie Consent -->
   <div id="cookieConsent" class="cookie-consent hidden">
     <div class="cookie-content">
       <button class="cookie-close" aria-label="Fechar">&times;</button>
-      <h3>Cookies e Privacidade</h3>
-      <p>Utilizamos cookies para melhorar sua experiência em nosso site. Ao continuar navegando, você concorda com nossa <a href="politica-privacidade.html">Política de Privacidade</a>.</p>
+      <h3>Cookies and Privacy</h3>
+      <p>We use cookies to enhance your browsing experience, tailor content and advertising, provide social media features, and analyze our traffic. By selecting “Accept”, you consent to the use of cookies as outlined in our <a href="privacy-policy.html" target="_parent">Privacy Policy</a>.</p>
       <div class="cookie-buttons">
-        <button id="acceptCookies" class="btn btn-primary">Aceitar</button>
-        <button id="rejectCookies" class="btn btn-secondary">Recusar</button>
+        <button id="acceptCookies" class="btn btn-primary">Accept</button>
+        <button id="rejectCookies" class="btn btn-secondary">Reject</button>
       </div>
     </div>
   </div>
@@ -135,12 +135,11 @@
   <!-- Age Gate -->
   <div id="ageGate" class="modal-overlay hidden">
     <div class="modal-content age-gate">
-      <h2>Verificação de Idade</h2>
-      <p>Você tem 18 anos ou mais?</p>
-      <p class="age-disclaimer">O consumo de bebidas alcoólicas é proibido para menores de 18 anos.</p>
+      <h2>Age Verification</h2>
+      <p class="age-disclaimer">To enter this website, you must be of legal drinking age in your country of residence.</p>
       <div class="age-buttons">
-        <button id="ageYes" class="btn btn-primary">Sim, 18+</button>
-        <button id="ageNo" class="btn btn-secondary">Não</button>
+        <button id="ageYes" class="btn btn-primary">Yes, I am of legal age.</button>
+        <button id="ageNo" class="btn btn-secondary">Yes, I am not of legal age.</button>
       </div>
     </div>
   </div>
@@ -149,6 +148,6 @@
   <script src="../js/cookie-consent.js"></script>
   <script src="../js/age-gate.js"></script>
   <script src="../js/scroll-animations.js"></script>
-  <script src="../js/loader.js"></script>
+  <script src="../js/loader-en.js"></script>
 </body>
 </html>
