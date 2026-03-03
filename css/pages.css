@@ -246,7 +246,7 @@
   overflow: hidden;
 }
 
-.carousel-slide {
+/* .carousel-slide {
   position: absolute;
   inset: 0;
   opacity: 0;
@@ -255,6 +255,20 @@
 
 .carousel-slide.active {
   opacity: 1;
+} */
+
+.carousel-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
 }
 
 .carousel-dots {
