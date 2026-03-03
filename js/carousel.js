@@ -48,4 +48,13 @@
   // Pause on hover
   carousel.addEventListener('mouseenter', stopAutoplay);
   carousel.addEventListener('mouseleave', startAutoplay);
+
+  window.addEventListener("load", function () {
+    document.querySelectorAll(".hero-background").forEach(el => {
+        el.style.display = "none";
+        el.offsetHeight; // força reflow
+        el.style.display = "block";
+    });
+});
+
 })();
