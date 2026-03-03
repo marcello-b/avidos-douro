@@ -18,6 +18,14 @@
   background-attachment: fixed;
 }
 
+.hero-background img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .hero-overlay {
   position: absolute;
   inset: 0;
