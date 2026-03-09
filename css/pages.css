@@ -19,12 +19,30 @@
   image-rendering: -webkit-optimize-contrast;
 }
 
+/* Versões desktop */
+    .hero-4 { background-image: url('../images/hero-4.jpg'); }
+    .hero-3 { background-image: url('../images/hero-3.jpg'); }
+    .hero-6 { background-image: url('../images/hero-6.jpg'); }
+    .hero-8 { background-image: url('../images/hero-10.jpg'); }
+
+/* Versões mobile (até 768px) */
+@media (max-width: 768px) {
+    .hero-background {
+        background-attachment: fixed; 
+    }
+    .hero-4 { background-image: url('../images/hero-4-mobile.jpg'); }
+    .hero-3 { background-image: url('../images/hero-3-mobile.jpg'); }
+    .hero-6 { background-image: url('../images/hero-6-mobile.jpg'); }
+    .hero-8 { background-image: url('../images/hero-10-mobile.jpg'); }
+}
+
 .hero-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
   /* background: linear-gradient(135deg, rgba(107, 37, 37, 0.95), rgba(61, 22, 22, 0.85)); */
 }
+
 
 .hero-content {
     position: absolute;     
@@ -252,7 +270,7 @@
     inset:0;
     opacity:0;
     visibility:hidden;
-    transition:opacity .9s ease;
+    transition:opacity 2s ease;
     z-index:1;
 }
 
@@ -813,3 +831,6 @@
     padding: 1.5rem; 
   }
 }
+
+
+
