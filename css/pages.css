@@ -28,7 +28,7 @@
 /* Versões mobile (até 768px) */
 @media (max-width: 768px) {
     .hero-background {
-        background-attachment: fixed; 
+        background-attachment: scroll; 
     }
     .hero-4 { background-image: url('../images/hero-4-mobile.jpg'); }
     .hero-3 { background-image: url('../images/hero-3-mobile.jpg'); }
