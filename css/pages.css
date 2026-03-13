@@ -21,7 +21,7 @@
 
 /* Versões desktop */
     .hero-4 { background-image: url('../images/hero-4.jpg'); }
-    .hero-3 { background-image: url('../images/hero-3.jpg'); }
+    .hero-3 { background-image: url('../images/hero-12.jpg'); }
     .hero-6 { background-image: url('../images/hero-6.jpg'); }
     .hero-8 { background-image: url('../images/hero-10.jpg'); }
 
@@ -31,7 +31,7 @@
         background-attachment: scroll; 
     }
     .hero-4 { background-image: url('../images/hero-4-mobile.jpg'); }
-    .hero-3 { background-image: url('../images/hero-3-mobile.jpg'); }
+    .hero-3 { background-image: url('../images/hero-12-mobile.jpg'); }
     .hero-6 { background-image: url('../images/hero-6-mobile.jpg'); }
     .hero-8 { background-image: url('../images/hero-10-mobile.jpg'); }
 }
